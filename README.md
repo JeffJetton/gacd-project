@@ -1,2 +1,2 @@
-# gacd-project
-Course project
+## Getting and Cleaning Data -- Course Project
+

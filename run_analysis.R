@@ -23,7 +23,7 @@ test.sub <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 test.act <- read.table("./UCI HAR Dataset/test/y_test.txt")
 test.feat <- read.table("./UCI HAR Dataset/test/X_test.txt")
 
-# Check tables sizes for reasonableness/accuracy
+# Check table sizes for reasonableness/accuracy
 dim(train.sub); dim(train.act); dim(train.feat)
 dim(test.sub); dim(test.act); dim(test.feat)
 
@@ -130,11 +130,11 @@ names(data) <- features.fixed
 # for each combination of activity and subject
 tidy.means <- aggregate(. ~ subject + activity, data=data, mean)
 
-# Reorder so that subjects and activity group better
+# Reorder so that each subject's activity appear together
 tidy.means<- tidy.means[order(tidy.means$subject, tidy.means$activity),]
 
 # Output the data
 write.table(tidy.means, file="tidymeans.txt", row.names=FALSE)
 
-
+# Done! :-)
 

@@ -13,7 +13,7 @@ These signals were used to estimate means and standard deviations of the feature
 
 The source data contained multiple rows for each subject and activity type. That is, each activity was performed multiple times by the same subject. The mean, for example, of a signal would then be the mean value of that signal during that one performance of that particular activity.
 
-**Note:** For the final output file ("tidymeans.csv"), multiple performances were aggregated further by taking the mean of each measurement for a given activity by a given subject. So when referencing the tidymeans.csv file, each variable below should be interpreted as the *mean* of the listed measurement, resulting in a "mean of means" and a "mean of standard deviations".
+**Note:** For the final output file (`tidymeans.txt`), multiple performances were aggregated further by taking the mean of each measurement for a given activity by a given subject. So when referencing the tidymeans.csv file, each variable below should be interpreted as the *mean* of the listed measurement, resulting in a "mean of means" and a "mean of standard deviations".
 
 <br>
 

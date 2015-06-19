@@ -18,7 +18,7 @@ Next, the script converts the activities, which were coded as integers in the so
 
 In the source data, the feature names were stored in a separate file rather than as headers in each main data file. We next transform the approriate feature names, removing invalid characters, etc., and apply them to the columns in our data frame (step 4).
 
-Finally, our data is aggregated at the subject/activity level and output as a comma-separated, plain text file named `tidymeans.csv` (step 5). There are six different activity rows for each of the 30 subjects, for a total of 180 rows. The remaining columns are the means of the selected features from the source data. (Note that this effectively gives us "means of means" and "means of standard deviations".)
+Finally, our data is aggregated at the subject/activity level and output as a space-separated, plain text file named `tidymeans.txt` (step 5). There are six different activity rows for each of the 30 subjects, for a total of 180 rows. The remaining columns are the means of the selected features from the source data. (Note that this effectively gives us "means of means" and "means of standard deviations".)
 
 Please refer to the included codebook for more information on the included fields and the subsequent output file.
 
